@@ -45,7 +45,7 @@ def bmp_to_binary_array(bmp_path):
 
         # Convert the array to a binary array based on the threshold
         # Pixels with values < threshold are set to 0, otherwise 1
-        binary_array = (img_array < threshold).astype(int)
+        binary_array = (img_array >= threshold).astype(int)
 
         # Output the size
         output_size = list(binary_array.shape)
