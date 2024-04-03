@@ -41,7 +41,7 @@ def bmp_to_binary_array(bmp_path):
         img_array = np.array(gray_img)
 
         # Determine the threshold (128 out of 255, because 50% darkness)
-        threshold = 128
+        threshold = 200
 
         # Convert the array to a binary array based on the threshold
         # Pixels with values < threshold are set to 0, otherwise 1
